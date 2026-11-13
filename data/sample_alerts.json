@@ -1,0 +1,65 @@
+
+[
+  {
+    "alert_id": "ALT-001",
+    "event_type": "failed_login",
+    "source_ip": "192.0.2.10",
+    "description": "Multiple failed login attempts against an employee account",
+    "failed_attempts": 12,
+    "severity": "medium"
+  },
+  {
+    "alert_id": "ALT-002",
+    "event_type": "successful_login_after_failures",
+    "source_ip": "198.51.100.25",
+    "description": "Successful login following several failed authentication attempts",
+    "failed_attempts": 8,
+    "severity": "high"
+  },
+  {
+    "alert_id": "ALT-003",
+    "event_type": "unusual_outbound_traffic",
+    "source_ip": "192.0.2.45",
+    "description": "Unusually large outbound data transfer detected",
+    "data_transferred_mb": 950,
+    "severity": "high"
+  },
+  {
+    "alert_id": "ALT-004",
+    "event_type": "suspicious_process",
+    "source_ip": "192.0.2.60",
+    "description": "Suspicious PowerShell process execution detected",
+    "process_name": "powershell.exe",
+    "severity": "high"
+  },
+  {
+    "alert_id": "ALT-005",
+    "event_type": "privilege_escalation",
+    "source_ip": "192.0.2.75",
+    "description": "Unexpected administrative privilege assignment",
+    "severity": "critical"
+  },
+  {
+    "alert_id": "ALT-006",
+    "event_type": "normal_dns_query",
+    "source_ip": "192.0.2.80",
+    "description": "Routine DNS query to a known internal domain",
+    "severity": "low"
+  },
+  {
+    "alert_id": "ALT-007",
+    "event_type": "failed_login",
+    "source_ip": "198.51.100.90",
+    "description": "Repeated failed authentication attempts against a user account",
+    "failed_attempts": 3,
+    "severity": "low"
+  },
+  {
+    "alert_id": "ALT-008",
+    "event_type": "malware_detection",
+    "source_ip": "192.0.2.100",
+    "description": "Endpoint security detected a potentially malicious executable",
+    "file_name": "suspicious_update.exe",
+    "severity": "critical"
+  }
+]
